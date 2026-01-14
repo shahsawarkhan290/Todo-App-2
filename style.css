@@ -1,0 +1,149 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    color: white;
+}
+.todoapp{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.container{
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.inputf{
+    display: flex;
+
+}
+.inputf input{
+    width: 350px;
+    height: 40px;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+      
+}
+.inputf button{
+font-size: 25px;
+height: 50px;
+width: 100px;
+border: 2px solid white;
+border-radius: 10px;
+margin-left: 80px;
+background-color: #ff5945;
+color: white;
+cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+     position: relative;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image:url(Images/images\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  top:12px;
+  left: 12px;
+}
+ul li span{
+    font-size: 22px;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#edeef0;
+
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+ul li.checked::before{
+    background-image: url(Images/images.png);
+}
+@media(max-width:600px){
+    .todoapp{
+    width: 100%;
+    min-height: 50vh;
+    padding: 5px;
+}
+.container{
+    background-color:white;
+    color: black;
+    width: 100%;
+    max-width: 250px;
+    align-items: center;
+    padding: 20px 15px 35px;
+    margin: 100px auto 10px;
+    border: 2px solid white;
+    border-radius: 17px;
+}
+.inputf input{
+    width: 200px;
+    height: 20px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 9px;
+      
+}
+.inputf button{
+font-size: 13px;
+height: 25px;
+width: 50px;
+border: 2px solid white;
+border-radius: 10px;
+margin-left: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 6px 4px 6px 25px;
+}
+ul li::before{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+}
+ul li span{
+    font-size: 11px;
+    top: 2.5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+}
+}
