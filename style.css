@@ -94,14 +94,14 @@ ul li.checked::before{
 @media(max-width:600px){
     .todoapp{
     width: 100%;
-    min-height: 50vh;
+    min-height: 60vh;
     padding: 5px;
 }
 .container{
     background-color:white;
     color: black;
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     align-items: center;
     padding: 20px 15px 35px;
     margin: 100px auto 10px;
@@ -109,18 +109,18 @@ ul li.checked::before{
     border-radius: 17px;
 }
 .inputf input{
-    width: 200px;
-    height: 20px;
-    border: 1.5px solid gray;
+    width: 250px;
+    height: 25px;
+    border: 1px solid gray;
     border-radius: 5px;
     margin-right: 5px;
-    font-size: 9px;
+    font-size: 13px;
       
 }
 .inputf button{
-font-size: 13px;
-height: 25px;
-width: 50px;
+font-size: 20px;
+height: 30px;
+width: 80px;
 border: 2px solid white;
 border-radius: 10px;
 margin-left: 40px;
@@ -128,18 +128,18 @@ margin-left: 40px;
 
 ul li{
     list-style: none;
-    font-size: 13px;
+    font-size: 20px;
     padding: 6px 4px 6px 25px;
 }
 ul li::before{
-  height: 10px;
-  width: 10px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   top: 6px;
   left: 6px;
 }
 ul li span{
-    font-size: 11px;
+    font-size: 17px;
     top: 2.5px;
     width: 20px;
     height: 20px;
