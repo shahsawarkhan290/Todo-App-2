@@ -5,6 +5,10 @@ body{
     background-color: blueviolet;
     color: white;
 }
+h1{
+       text-align: center;
+       margin-top: 50px;
+}
 .todoapp{
     width: 100%;
     min-height: 100vh;
@@ -143,7 +147,7 @@ ul li span{
     top: 2.5px;
     width: 20px;
     height: 20px;
-    line-height: 20px;
+    line-height: 21px;
     border-radius: 50%;
 }
 }
