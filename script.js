@@ -2,9 +2,10 @@ const input=document.querySelector("#inp");
 const ul=document.querySelector("#list-Container");
 
 function Addtask(){
-    if(input.value!=""){
-    console.log("button was clicked");
-    console.log(input.value);
+    if(/^-?\d+$/.test(input.value.trim())){
+alert("you cannot store the Number")
+}
+    else if(input.value!=""){
 store();
 input.value="";
  browdata();
