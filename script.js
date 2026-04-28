@@ -2,9 +2,11 @@ const input=document.querySelector("#inp");
 const ul=document.querySelector("#list-Container");
 
 function Addtask(){
-    if(/^-?\d+$/.test(input.value.trim())){
-alert("you cannot store the Number")
+    if(!/^[A-Za-z\s]+$/.test(input.value)){
+alert("you can store only Alphabets");
 }
+
+
     else if(input.value!=""){
 store();
 input.value="";
